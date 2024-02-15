@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body,
+html {
+  height: 100%;
+  background-color: #ff4081;
+}
+
+.center {
+  text-align: center;
+  font-size: xx-large;
+  border: 2px #fff solid;
+  border-radius: 8px;
+}
+
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(to right, #ff4081, #f50057);
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  margin-bottom: 50px;
+}
+
+header #header {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.location {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.location #location {
+  font-size: 1.75rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+}
+
+.current {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+
+  border: 5px solid #fff;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.current:hover {
+  transform: scale(1.25);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.current #current {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
